@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BHARATI VIDYAPEETH</title>
+</head>
+   
+<style>
+    /* css reset */
+    body{
+        padding: 0px;
+        margin: 0px;
+        background: linear-gradient(#e7f7f74d, #e3f5f577), url(https://cdn.pixabay.com/photo/2018/09/23/17/02/university-3697853_960_720.jpg);  
+        background-size: 1500px;    
+    }   
+
+.left{
+    display: inline-block;
+    width: 20%;
+    top: 9px;
+    position: absolute;
+    margin: 20px;
+    left: 30px;    
+}
+.left,img{
+    width: 126px;
+    filter: invert(100%);
+    background-image: black;
+    
+}
+.left,div{
+    font-size: 10px;
+    text-align: center;
+    
+}
+
+.mid{
+    display: block; 
+    border: 2px solid black;
+    margin: 40px auto;
+    width: 43%;
+    padding: 5px, 13px;
+}
+.nav,a{
+    color: rgb(14, 13, 13); font-size: 15px; 
+    text-decoration: none;
+    padding: 4px 4px;
+    text-align: center;   
+}
+.nav a:hover, .nav a.active{
+    text-decoration: underline;
+    color: grey;
+}
+.right{
+    display: inline-block;
+    border: 2px solid black;
+    width: 4%;
+    top: 30px;
+    position: absolute;
+    margin: 20px;
+    right: 30px; 
+    padding: 4px;  
+    text-align: center;
+}
+.right .btn{
+    background-color: rgb(201, 198, 198);
+    font-size: 14px;
+}
+button:hover{
+    color: rgb(75, 74, 74);
+}
+.div{
+    background-color: rgb(199, 129, 25);
+}
+.contentouter{
+    margin-bottom: 100px;
+}
+section{
+    padding: 0;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    display: block;
+}
+.container{
+    max-width: 1140px;
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 0 15px;  
+}
+.contentOuter .row {
+    width: 80%;
+    margin: 42px;
+        margin-top: 42px;
+        margin-right: 42px;
+        margin-bottom: 42px;
+        margin-left: 42px;
+    position: relative;
+    border-radius: 6px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 8px;
+    -webkit-box-shadow: 0px 32px 35px -40px rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 32px 35px -40px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contentOuter .loginform{
+    padding: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+   
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    z-index: 99;
+}
+.col-sm-7 {
+    background: #fff;
+        background-color: rgb(255, 255, 255);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-image: none;
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;  
+    left: 10%;
+    -webkit-box-flex: 0;
+    flex: 60%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 58%;
+    max-width: 48%;
+    position: relative;
+    min-height: 1px;
+}
+.fieldOuter {
+    margin-bottom: 18px;
+    margin-right: 100px;
+}
+.fieldOuter input{
+    background-color: #f3f8fb;
+    border: 1px solid #e2e6e9;
+        border-top-color: rgb(226, 230, 233);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(226, 230, 233);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(226, 230, 233);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(226, 230, 233);
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+    border-radius: 6px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 25px;
+        padding-top: 20px;
+        padding-right: 25px;
+        padding-bottom: 20px;
+        padding-left: 25px;
+    font-size: 14px;
+    color: #192a50;
+    width: 39%;
+    height: 4px;
+}
+input {
+    overflow: visible;
+        overflow-x: visible;
+        overflow-y: visible;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    font-family: inherit;
+    line-height: inherit;
+}
+.fieldOuter textarea {
+    height: 100px;
+    resize: none;
+    background-color: #f3f8fb;
+    border-radius: 6px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 25px;
+        padding-top: 20px;
+        padding-right: 25px;
+        padding-bottom: 20px;
+        padding-left: 25px;
+    font-size: 14px;
+    color: #192a50;
+    width: 100%;
+    
+      
+}    
+textarea { 
+    width: 260px;
+    overflow: auto;
+        overflow-x: auto;
+        overflow-y: auto;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 100px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    font-family: inherit;
+    line-height: inherit;
+    min-height: 25px !important;
+    border: 1px solid green !important;
+        border-top-color: green;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: green;
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: green;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: green;
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+    border-radius: 6px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;    
+}
+.text-right {
+    text-align: right !important;
+    
+}
+[type="submit"]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+.themeBtn{
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    padding: 15px 50px;
+        padding-top: 15px;
+        padding-right: 50px;
+        padding-bottom: 15px;
+        padding-left: 50px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#95c33b, #9fdd2a);
+        background-color: rgba(0, 0, 0, 0);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-image: -webkit-linear-gradient(rgb(149, 195, 59), rgb(159, 221, 42));
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+    border-radius: 50px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+        border-top-color: currentcolor;
+        border-top-style: none;
+        border-top-width: medium;
+        border-right-color: currentcolor;
+        border-right-style: none;
+        border-right-width: medium;
+        border-bottom-color: currentcolor;
+        border-bottom-style: none;
+        border-bottom-width: medium;
+        border-left-color: currentcolor;
+        border-left-style: none;
+        border-left-width: medium;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+    letter-spacing: 2px;
+    width: auto;
+    -webkit-box-shadaw: 0 4px 15px 0px rgba(150, 198, 57, 0.6);
+}
+[type="submit"], button {
+    -webkit-appearance: button;
+        appearance: button;
+}
+button{
+    overflow: visible;
+        overflow-x: visible;
+        overflow-y: visible;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 50px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    font-family: inherit;
+    line-height: inherit;        
+}
+.addressArea{
+    padding: 70px 45px 45px !important;
+    padding-top: 70px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+    padding-left: 45px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #94c33c;
+
+}
+.addressArea {
+    color: #fff;
+    background-image: url(../images/email-icon.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 99;
+}
+.col-sm-5 {
+    -webkit-box-flex: 0;
+        -moz-box-flex: 0;
+    flex: 41.666667%;
+    max-width: 25%;    
+}
+.addressArea h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 55px;
+}
+h3{
+    font-family: inherit;
+    line-height: 1;
+    color: inherit;
+    margin-top: 0;
+    text-align: center;
+    left: 20%;
+}
+.addressArea ul {
+    list-style: none;
+        list-style-position: outside;
+        list-style-image: none;
+        list-style-type: none;
+    padding: 0;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+}
+.addressArea ul li {
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.addressArea ul li span::before {
+    border-color: #85af36;
+        border-top-color: rgb(133, 175, 54);
+        border-right-color: rgb(133, 175, 54);
+        border-bottom-color: rgb(133, 175, 54);
+        border-left-color: rgb(133, 175, 54);
+    bottom: -26px;
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 87%;
+    border-bottom: 1px solid #b7d77c;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        
+}
+::before {
+    box-sizing: border-box;
+}
+.addressArea ul li span::after{
+    position: absolute;
+    content: "";
+    bottom: -25px;
+    right: 0;
+    width: 87%;
+    border-bottom: 1px solid #b7d77c;
+        border-bottom-color: rgb(183, 215, 124);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+}
+::after{
+    box-sizing: border-box;
+}
+.footer{
+    background-color: rgb(196, 95, 196);
+    filter: invert(100%);
+}
+.image{
+    background-color: rgb(180, 231, 233);
+    width: 1290px;
+    align-items: center;
+}
+</style> 
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://bharatividyapeeth21.onlineapplicationform.org/BVP/images/logo.png" alt="success logo">
+            <div><b>BHARTI VIDYAPEETH</b></div>
+        </div>
+
+        <div class="mid">
+            <nav class="nav">
+                <b><a href="home.html">Home</a>
+                <a href="about_us.html">About us</a>    
+                <a href="languages.html">Languages</a>
+                <a href="admission.html">Admission</a>              
+                <a href="contact_us.html" class="active">Contact Us</a>
+                <a href="login.html">Login</a></b>
+            </nav>    
+        </div>
+
+        <div class="right">
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+
+    <div class="div">
+        <h1>Don't be Stranger</h1> 
+        <h3>Feel free to contact us if you need some help, consultation or<br>
+           you have some other questions.</h3> 
+    </div>
+    <br>
+    <br>
+    <br>
+    <main>
+    <section class="contentouter">
+        <div class="container">
+        <div class="row">
+          
+        <div class=" col-sm-7 loginform">
+        <br>
+        <br>    
+        <div class="fieldOuter">
+            <input type="text" name="name" placeholder="Your name">
+        </div>
+        <div class="fieldOuter">
+            <input type="email" name="mail" placeholder="Your mail..." value="">
+        </div>
+        <div class="fieldOuter">
+            <input type="number" name="phone" placeholder="Your phone no">
+        </div>
+        <div class="fieldouter">
+            <textarea name="message" placeholder="Message..." cols="26" rows="7"></textarea>
+        </div>
+        <br>
+        <div class="fieldOuter text-right">
+            <button class="themeBtn" type="submit" name="">Submit</button>
+        </div>
+        </div>
+        <div class="col-sm-5 addressArea">
+            <h3>Ask Us Anything</h3>
+            <ul>
+                <li>
+                <i class="fa fa-map-marker" aria-hidden="true">
+                        
+                </i>
+                    <span>
+                    <a class="::before"></a>   
+                        <a style="color: white;" href="https://goo.gl/maps/bhiU4au3764eDjVu8" target="_blank">A-4, Rohtak Rd, Shiva Enclave, Paschim Vihar, New Delhi, Delhi 110063</a>
+                    <a class="::after"></a>  
+                    </span>
+                </li>
+                    <br>
+                    <br>
+                    <br>
+                    
+                <li>
+                    <i class="fa fa-envelope-o" aria-hidden="true">
+                        
+                    </i>
+                    <span>
+                        
+                        <a style="color: white;" href="mailto:info@bharatividyapeeth.com.au">info@bharatividyapeeth.com.au</a>
+                    
+                    </span>
+                </li>
+                    <br>
+                    <br>
+                    <br>
+              
+                    <i class="fa fa-mobile" aria-hidden="true">
+                    
+                </i>
+                <span>
+                    <a style="color: white;" href="tel:61426230061">+61 426230061</a>
+                </span>
+               
+            </ul>
+        </div>
+        </div>
+        </div>
+    </section>
+</main>
+<br>
+<br>
+
+    
+    <div>
+        <footer class="footer">
+            <img class="image" src="https://www.vmedulife.com/webassets/images/Green-Campus-Certification.jpg">
+            <h4>
+                Privacy Policy  |  Terms & Conditions  |  Disclaimer<br>    
+                Copyright 2014 bvimr.com, All rights reserved. | Powered By Ethical Web Solutions<br>
+                No of visitors : 00319640<br> 
+                BVIMR<br>
+                Institute Of Management & Research, Delhi<br>
+                3.9 out of 5<br>
+                196 Reviews<br> </h4>
+        </footer>    
+    </div> 
+      
+   
+
+
+</body>
+</html>

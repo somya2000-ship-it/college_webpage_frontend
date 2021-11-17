@@ -1,0 +1,15 @@
+main{
+    background-color: #26a09a;
+}
+header{
+    color: whitesmoke; text-align: center; font-size: 25px;
+    background: url(/home/somya/Downloads/paris-4793190_960_720.jpg);
+    padding: 0px; margin: 0px; background-size: 1500px; height: 500px;
+}
+
+nav,a{
+    color:whitesmoke; background-color:black; font-size: 20px; text-decoration: none; 
+    padding: 15px; 
+h2{
+    color: midnightblue; text-align: center; font-size: 30px; 
+}

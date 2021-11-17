@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BHARATI VIDYAPEETH</title>
+</head>
+   
+<style>
+    /* css reset */
+    body{
+        padding: 0px;
+        margin: 0px;
+        background: linear-gradient(#e7f7f74d, #e3f5f577), url(https://cdn.pixabay.com/photo/2018/09/23/17/02/university-3697853_960_720.jpg); 
+        background-size: 1500px;    
+    }   
+
+.left{
+    display: inline-block;
+    width: 20%;
+    top: 9px;
+    position: absolute;
+    margin: 20px;
+    left: 30px;    
+}
+.left,img{
+    width: 126px;
+    filter: invert(100%);
+    background-image: black;
+    
+}
+.left,div{
+    font-size: 10px;
+    text-align: center;
+    
+}
+
+.mid{
+    display: block; 
+    border: 2px solid black;
+    margin: 40px auto;
+    width: 43%;
+    padding: 5px, 13px;
+}
+.nav,a{
+    color: rgb(17, 17, 17); font-size: 15px; 
+    text-decoration: none;
+    padding: 4px 4px;
+    text-align: center;   
+}
+.nav a:hover, .nav a.active{
+    text-decoration: underline;
+    color: grey;
+}
+.right{
+    display: inline-block;
+    border: 2px solid black;
+    width: 5%;
+    top: 40px;
+    position: absolute;
+    margin: 20px;
+    right: 30px; 
+    padding: 3px;  
+}
+.bttn{
+    background-color: rgb(201, 198, 198);
+    font-size: 14px;
+}
+button:hover{
+    color: rgb(75, 74, 74);
+}
+.div, h1{
+    background-color: rgb(199, 129, 25);
+    font-size: 30px;
+}
+.contentOuter {
+    margin-bottom: 100px;
+}
+section {
+    display: block;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0 auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    padding: 0 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+}
+.contentOuter .row {
+    left: 5%;
+    width: 80%;
+    margin: -42px auto auto;
+        margin-top: -42px;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+    position: relative;
+    border-radius: 6px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    -webkit-box-shadow: 0px 32px 35px -40px rgba(0, 0, 0, 0.6);
+        box-shadow: rgba(0, 0, 0, 0.6) 0px 32px 35px -40px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contentOuter .loginForm{
+    background: #fff;
+        background-color: rgb(255, 255, 255);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-image: none;
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+    padding: 50px;
+        padding-top: 70px;
+        padding-right: 50px;
+        padding-bottom: 70px;
+        padding-left: 50px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    z-index: 79;
+}
+.col-sm-7 {
+    -webkit-box-flex: 0;
+        -moz-box-flex: 0;
+    flex: 60%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 58%;
+    max-width: 40%;
+    position: relative;
+    left: 3%;
+    min-height: 2px;
+}
+.fieldOuter {
+    margin-bottom: 18px;
+}
+.fieldOuter input{
+    background-color: #f3f8fb;
+    border: 1px solid #e2e6e9;
+        border-top-color: rgb(226, 230, 233);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(226, 230, 233);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(226, 230, 233);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(226, 230, 233);
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+    border-radius: 6px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 25px;
+        padding-top: 20px;
+        padding-right: 25px;
+        padding-bottom: 20px;
+        padding-left: 25px;
+    font-size: 14px;
+    color: #192a50;
+    width: 80%;
+    height: 20px;
+}
+.form-control{
+    line-height: 1.5;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        transition-property: border-color, box-shadow;
+        transition-duration: 0.15s, 0.15s;
+        transition-timing-function: ease-in-out, ease-in-out;
+        transition-delay: 0s, 0s;
+    height: unset;   
+    box-shadow: none;
+    font-weight: 400 
+}
+input {
+    overflow: visible;
+        overflow-x: visible;
+        overflow-y: visible;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    font-family: inherit;       
+}
+.rememberForgot {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.rememberForgot > div{
+    float: left;
+    width: 50%;
+    font-weight: 500;
+}
+input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        
+}
+.rememberForgot > div span{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 6px;
+}
+.rememberForgot > div:last-child{
+    text-align: right;
+    right: 20%;
+}
+.rememberForgot > div{
+    float: left;
+    width: 50%;
+    font-weight: 300;
+}
+.mt-5{
+    margin-top: 3rem !important;
+}
+.mt-5{
+    color: #007bff;
+    text-decoration: none;
+        text-decoration-line: none;
+        text-decoration-style: solid;
+        text-decoration-color: currentcolor;
+        text-decoration-thickness: auto;
+    background-color: transparent;
+}
+.rememberForgot > div span{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 6px;
+}
+.text-right {
+    text-align: right !important;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+button, html [type="button"] {
+    -webkit-appearance: button;
+        appearance: button;
+}
+button.btn {
+    background: #94c23c;
+        background-color: rgb(148, 194, 60);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-image: none;
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+    margin: 0 6px;
+        margin-top: 0px;
+        margin-right: 6px;
+        margin-bottom: 0px;
+        margin-left: 6px;
+    font-weight: 400;
+    padding: 12px 32px;
+        padding-top: 12px;
+        padding-right: 32px;
+        padding-bottom: 12px;
+        padding-left: 32px;
+    border: 1px solid transparent;
+        border-top-color: transparent;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: transparent;
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: transparent;
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+    border-radius: 50px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    text-transform: capitalize;
+}
+.themeBtn{
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+    width: auto;
+    -webkit-box-shadow: 0 4px 15px 0px rgba(150, 198, 57, 0.6);
+        box-shadow: rgba(150, 198, 57, 0.6) 0px 4px 15px 0px;
+       
+}
+.btn{
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    line-height: 1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition-property: color, background-color, border-color, box-shadow;
+    transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s, 0s;
+}
+button, input {
+    overflow: visible;
+        overflow-x: visible;
+        overflow-y: visible;
+    font-family: inherit;
+}
+.contentOuter .registerLink{
+    color: #fff;
+    background-image: url(../images/email-icon.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+        background-position-x: right;
+        background-position-y: bottom;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 99;
+    background-color: #94c33c;
+}
+.text-center {
+    text-align: center !important;
+}
+.col-sm-5 {
+    -webkit-box-flex: 0;
+        -moz-box-flex: 0;
+    flex: 0 0 41.666667%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 41%;
+    max-width: 27.666667%;
+    position: relative;
+    width: 80%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.contentOuter .registerLink h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 21px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+h3{
+    font-family: inherit;
+    line-height: 1.2;
+    color: inherit;
+    margin-top: 0;
+}
+.contentOuter .registerLink p {
+    font-size: 15px;
+    line-height: 27px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.themeBtn.blueBtn {
+    background: #192c53;
+        background-color: rgb(25, 44, 83);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-image: none;
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+    -webkit-box-shadow: 0 4px 10px 0px rgba(25, 44, 83, 0.6);
+        box-shadow: rgba(25, 44, 83, 0.6) 0px 4px 10px 0px;
+}
+.themeBtn{
+    display: inline-block;
+    color: #fff;
+    padding: 15px 30px;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+    text-transform: uppercase;
+    border-radius: 50px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    font-weight: 600;
+    font-size: 13px;
+    border: none;
+        border-top-color: currentcolor;
+        border-top-style: none;
+        border-top-width: medium;
+        border-right-color: currentcolor;
+        border-right-style: none;
+        border-right-width: medium;
+        border-bottom-color: currentcolor;
+        border-bottom-style: none;
+        border-bottom-width: medium;
+        border-left-color: currentcolor;
+        border-left-style: none;
+        border-left-width: medium;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+    letter-spacing: 2px;
+    width: auto;
+    cursor: pointer;
+}
+.themeBtn.blueBtn, a{
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: auto;
+}
+.footer{
+    background-color: rgb(196, 95, 196);
+    filter: invert(100%);
+}
+.image{
+    background-color: rgb(180, 231, 233);
+    width: 1290px;
+    align-items: center;
+}
+
+</style> 
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://bharatividyapeeth21.onlineapplicationform.org/BVP/images/logo.png" alt="success logo">
+            <div><b>BHARTI VIDYAPEETH</b></div>
+        </div>
+
+        <div class="mid">
+            <nav class="nav">
+                <b><a href="home.html">Home</a>
+                <a href="about_us.html">About us</a>    
+                <a href="languages.html">Languages</a>
+                <a href="admission.html">Admission</a>              
+                <a href="contact_us.html">Contact Us</a>
+                <a href="login.html" class="active">Login</a></b>
+            </nav>    
+        </div>
+
+        <div class="right">
+            <button class="bttn">Email us</button>
+        </div>
+    </header>
+    <br>
+    <br>
+        <div class="div">
+            <h1>Login</h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <section class="contentOuter">
+            <form>
+                <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 loginForm">
+                        <div class="fieldOuter">
+                            <input class="form-control" placeholder="Email" name="email" type="text" value="">
+                        </div>
+                        <div class="fieldOuter">
+                            <input class="form-control" placeholder="Password" name="password" autocomplete="off" type="password" value="">
+                        </div>
+                        <div class="rememberForgot">
+                            <div class="rememberMe">
+                                <input type="checkbox" name="">
+                                <span>Remember me</span>
+                            </div>
+                            <div class="forgotPwd">
+                                <a class="mt-5" href="/auth/forgot">
+                                    <span>Forgot your Password?</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="fieldOuter text-right">
+                            <button class="themeBtn btn btn-secondary" type="button" >Login</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 registerLink text-center"> 
+                        <h3>New User?</h3>
+                        <p>Register now to obtain your<br> Free Mock Test Material</p>
+                        <a class="themeBtn blueBtn" href="/auth/register">Register</a> 
+                    </div>          
+                    </div>
+                </div>
+            </div>
+          </form>
+        </section>  
+        
+        <div>
+            <footer class="footer">
+                <img class="image" src="https://www.vmedulife.com/webassets/images/Green-Campus-Certification.jpg">
+                <h4>
+                    Privacy Policy  |  Terms & Conditions  |  Disclaimer<br>    
+                    Copyright 2014 bvimr.com, All rights reserved. | Powered By Ethical Web Solutions<br>
+                    No of visitors : 00319640<br> 
+                    BVIMR<br>
+                    Institute Of Management & Research, Delhi<br>
+                    3.9 out of 5<br>
+                    196 Reviews<br> </h4>
+            </footer>    
+        </div> 
+       
+        
+       
+ 
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BHARATI VIDYAPEETH</title>   
+    </head>
+    <link rel="stylesheet" href="/home/somya/python/style/1_style.css">
+    <style>
+        /* css reset */
+        body{
+            padding: 0px;
+            margin: 0px;
+            background: linear-gradient(#e7f7f74d, #e3f5f577), url(https://cdn.pixabay.com/photo/2018/09/23/17/02/university-3697853_960_720.jpg); 
+            background-size: 1500px; 
+            background-repeat: no-repeat;    
+        }   
+    
+    .left{
+        display: inline-block;
+        width: 20%;
+        top: 25px;
+        position: absolute;
+        margin: 20px;
+        left: 30px;    
+    }
+    .left,img{
+        width: 126px;
+        filter: invert(100%);
+        background-image: black;
+    }
+    .left,div{
+        font-size: 10px;
+        text-align: center;
+        
+    }
+    
+    .mid{
+        display: block;
+        border: 2px solid black;
+        margin: 40px auto;
+        width: 43%;
+        padding: 5px, 13px;
+    }
+    .nav,a{
+        color: rgb(12, 12, 12); font-size: 15px; 
+        text-decoration: none;
+        padding: 4px 4px;
+        text-align: center;   
+    }
+    .nav a:hover, .nav a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .right{
+        display: inline-block;
+        border: 2px solid black;
+        width: 6%;
+        top: 40px;
+        position: absolute;
+        margin: 20px;
+        right: 30px; 
+        padding: 4px;  
+    }
+    .btn{
+        background-color: rgb(201, 198, 198);
+        font-size: 16px;
+    }
+    button:hover{
+        color: rgb(75, 74, 74);
+    }
+    .form{
+        background-color: rgb(133, 175, 54);
+        text-align: center;
+    
+    }
+    fieldset, .lgnd{
+        border: 1px solid rgb(17, 17, 14);
+        width: 1000px;
+        margin:auto;
+        text-align: center;
+    }
+    header{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 23px;
+    }
+    .footer{
+    background-color: rgb(196, 95, 196);
+    filter: invert(100%);
+    }
+    .image{
+    background-color: rgb(180, 231, 233);
+    width: 1290px;
+    align-items: center;
+    }
+    
+    </style> 
+    <body>
+        <header class="header">
+            <div class="left">
+                <img src="https://bharatividyapeeth21.onlineapplicationform.org/BVP/images/logo.png" alt="success logo">
+                <div><b>BHARTI VIDYAPEETH</b></div>
+            </div>
+    
+            <div class="mid">
+                <nav class="nav">
+                    <b><a href="home.html">Home</a>
+                    <a href="about_us.html">About us</a>    
+                    <a href="languages.html">Languages</a>
+                    <a href="admission.html" class="active">Admission</a>              
+                    <a href="contact_us.html">Contact Us</a>
+                    <a href="login.html">Login</a></b>
+                </nav>    
+            </div>
+      
+            <div class="right">
+                <button class="btn">Email us</button>
+            </div>
+            
+    
+    <body>
+        <main>
+        <form action="noaction.php" class="form">
+            <header> 
+                <h1>Admission</h1>
+                </header>
+                <br>
+                <h2>Payment form</h2>
+                <br>
+                <br>
+            
+            <p>First name: <input type = "text" name="name" id="name" required> </p>
+            <p>Last name: <input type = "text" name="name" id="name"> </p>
+
+            <fieldset>
+                <legend class="lgnd">Gender</legend>
+                <p>Male <input type ="radio" name="gender" id="male">  Female <input type = "radio" name="gender" id="Female"> </p>
+            </fieldset>
+            <p>Phone No.: <input type="number" name="number" id="number"></p>
+            <p>Address: <textarea name="address" id="address" cols ="50" rows ="6"></textarea> </p>
+            <p>Pincode: <input type ="number" name="pincode" id="pincode"> </p>
+            <p>E-mail: <input type = "email" name="email" id="email"> </p>
+            <p>Course:
+                <select name="course" id="course">
+                    <option value="">--Select a Course--</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="French">French</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Russian">Russian</option>
+                    <option value="German">German</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Turkish">Turkish</option>
+                    <option value="Thai">Thai</option>
+                </select>
+            </p>
+            <p>Year:
+                <select name="year" id="year">
+                    <option value="">Select Year</option>
+                    <option value="1st Year">1st Year</option>
+                    <option value="2nd Year">2nd Year</option>
+                </select> 
+
+            <br>
+            <br>
+            
+            <h2>Payment Information</h2>
+            <p>Card type: 
+                <select name="card_type" id="card_type">
+                    <option value="">--Select a Card Type--</option>
+                    <option value="Debit card">Debit card</option>
+                    <option value="Rupay">Rupay</option>
+                    <option value="visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Paytm">Paytm</option>
+                </select>
+            </p>
+            <p>Card number: <input type="number" name="card_number" id="card_nmber"> </p>
+            <p>Expiration Date: <input type="date" name="expiration_date" id="expiration_date"> </p>
+            <p>CVV: <input type="password" name="CVV" id="CVV"> </p>
+            <p><input type="submit" value="Payment" id="payment"> </p>
+            <p><input type="Reset" name="reset" id="reset"> </p>
+        </form>
+
+        <div>
+            <footer class="footer">
+                <img class="image" src="https://www.vmedulife.com/webassets/images/Green-Campus-Certification.jpg">
+                <h4>
+                    Privacy Policy  |  Terms & Conditions  |  Disclaimer<br>    
+                    Copyright 2014 bvimr.com, All rights reserved. | Powered By Ethical Web Solutions<br>
+                    No of visitors : 00319640<br> 
+                    BVIMR<br>
+                    Institute Of Management & Research, Delhi<br>
+                    3.9 out of 5<br>
+                    196 Reviews<br> </h4>
+            </footer>    
+            </div> 
+
+</body>    
+</html>
