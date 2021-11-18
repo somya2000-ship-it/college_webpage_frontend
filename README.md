@@ -1,7 +1,7 @@
 # college_webpage_frontend
 
 ## home_page
-<img src="https://github.com/somya2000-ship-it/college_webpage_frontend/blob/main/Screenshot%20from%202021-11-17%2019-23-39.png?raw=true"/>
+<img src="https://github.com/somya2000-ship-it/college_webpage_frontend/blob/main/1%20home%20page.png?raw=true"/>
 
 ## aboutus_page
 <img src="https://github.com/somya2000-ship-it/college_webpage_frontend/blob/main/2%20about%20us.png?raw=true"/>
