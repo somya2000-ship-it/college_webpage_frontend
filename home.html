@@ -80,6 +80,19 @@ h2{
     color: rgb(163, 7, 85);
     font-size: 35px;
 }
+.carousel-inner{
+    height: 300px;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 45px;
+    margin-top:  50px;
+    padding: auto;
+    padding-top: 5px;
+}
+.item, img{
+    height: 100% !important;
+    width:  100% !important;
+}    
 .container,img{
     filter: invert(100%);
     margin: 15px;
@@ -127,27 +140,66 @@ h2{
     <section>
         <div>        
         <h2>Join the best Institute of Delhi now-</h2>
-        <br>
-        <br>
-        <div class=container>
-        <img src="https://i.gifer.com/9gVD.gif" width="29%" height="285px">
-        <img src="https://d1bsmz3sdihplr.cloudfront.net/media/Languages/hello-languages.gif" width="29%" height="285px">
-        <img src="https://gifville.files.wordpress.com/2015/07/thankyouanim.gif" width="29%" height="285">
-        <br>
-        <br>
-        <br>
-        <br>
-        <img src="https://www.itranslate.com/images/old_static/globe/back--forth@2x.gif" width="29%" height="285px">
-        <img src="https://images.squarespace-cdn.com/content/v1/5d7bd675b95d9b3bf482a2e2/1585769822469-DYS3O5LZ0WNN0KYRJTRM/People+talking" width="29%" height="285px">
-        <img src="https://miro.medium.com/max/1838/1*hXcPKv1nTiKj7yzTdOlSoQ.gif" width="29%" height="285px">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+       <div class="container"> 
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="http://www.bvimr.com/admin/home_slider/slider-497782.jpg" alt="Los Angeles" style="width:50%;">
+                </div>
+                <div class="item">
+                    <img src="http://www.bvimr.com/admin/home_slider/slider-c1435e.jpg" alt="New york" style="width:50%;">
+                </div>
+                <div class="item">
+                  <img src="http://www.bvimr.com/admin/home_slider/slider-611c2d.jpg" alt="Chicago" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                    <img src="https://www.edufever.com/wp-content/uploads/2017/09/BVIMR-Recuriter.jpg" alt="New york" style="width:100%;">
+                  </div>
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        <div class="contr">
+            <img style="filter: invert(100%);" src="https://cdn.studyfrenchspanish.com/wp-content/uploads/2017/12/Language-Courses-in-Delhi.jpg" alt="language img" height="100px">
+            <span class="span"><em style="font-size: 23px;">Are you exploring foreign language courses in Delhi?</em>
+
+               <p> Not sure where to learn?</p>
+                
+                <p>Be it for a career or on a self-improvement kick, check out the list of colleges, universities, institutes, and embassies affiliated culture centers to get your skills up to scratch.</p>
+                
+                <p>are many good reasons to learn a foreign language.</p>
+                
+                <p>Once you are convinced, this brings up: Which language to learn? If you’re unsure, you can read the <type onclick="location.href='languages.html';" value="go to languages" style="text-decoration: underline;">best foreign languages for careers</type></p>
+                
+                <p>In an age of increasing globalization, a new tongue is a significant value-add to your CV as the career options in languages are growing day by day.</p>
+                
+                <p>Most people choose to learn a new language because they are looking to add something to their lives.</p>
+                
+               <p> On the other hand, some people wish to study for a reason as simple as getting language jobs that pay well & business opportunities or emigration to other countries.</p>
+                
+                <p>Plus, acquiring a language even purely as a hobby and interest is a common trend.</p>
+                
+                <p>whatever the reason may be, one can discover numerous language benefits.</p></span>
+        </div>
         </div>
     </section>
 </main>        
